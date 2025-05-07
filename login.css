@@ -1,0 +1,127 @@
+/* Wrapper just for the login page */
+.login-wrapper {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Glassmorphism login container */
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Heading */
+.login-form h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Input fields */
+.input-login-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.input-login-group input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-login-group input::placeholder {
+    color: #f1f1f1;
+}
+
+.input-login-group input:focus {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* Message box */
+.message {
+    color: #ffdf7e;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Button style */
+.login-btn,.signUp-btn {
+    width: 45%;
+    padding: 12px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+.signUp-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+.admin-login-heading{
+    margin-top: 10px;
+}
+
+.admin-login-heading a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 500px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

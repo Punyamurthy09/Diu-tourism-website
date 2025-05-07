@@ -1,0 +1,33 @@
+
+element{
+    width: 70%;
+}
+.nearestUtilityWrapper{
+    width: 100vw;
+}
+.maps-container{
+    width: 100vw;
+    height: 100%;
+}
+.leaflet-container .leaflet-touch .leaflet-retina .leaflet-fade-anim .leaflet-grab .leaflet-touch-drag .leaflet-touch-zoom{
+    height: 50%;
+}
+
+.loading-screen {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .loader {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  

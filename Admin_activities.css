@@ -1,0 +1,92 @@
+/* Admin_activities.css */
+
+.admin-activities-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(to right, #f1f8e9, #e0f2f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-image:
+  linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+  url("/public/assets/CV1.png");
+  background-size: cover;
+  }
+  
+  .admin-activities {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    padding-top: 0px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .admin-activities h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #004d40;
+    font-weight: 600;
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .button-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .add-services {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .add-services button {
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #0077b6;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 121, 107, 0.2);
+  }
+  
+  .add-services button:hover {
+    background-color: #023e8a;
+    transform: translateY(-2px);
+  }
+  
+  /* Optional: Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .admin-activities {
+      padding: 2rem 1.5rem;
+    }
+  
+    .add-services button {
+      font-size: 0.95rem;
+    }
+  }
+  

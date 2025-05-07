@@ -1,0 +1,102 @@
+/* AddRemovePublicToilets.css */
+
+.admin-transport-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.admin_activity_wrapper {
+  background: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.admin_activity_wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.admin-activity-form {
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-activity-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #00796b;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group input {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.25);
+}
+
+.adminPublicToiletSubmit {
+  background-color: #00796b;
+  color: #ffffff;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.adminPublicToiletSubmit:hover {
+  background-color: #004d40;
+  transform: scale(1.03);
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #e0f2f1;
+  color: #004d40;
+  border-left: 4px solid #00796b;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .admin_activity_wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .admin-activity-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .adminPublicToiletSubmit {
+    font-size: 0.95rem;
+  }
+}
